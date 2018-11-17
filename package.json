@@ -1,0 +1,13 @@
+{
+  "name": "Mira",
+  "version": "17.11.2018",
+  "description": "Самый лучший в мире бот!",
+  "author": "NyafiRawr#7358",
+  "license": "MIT",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "pg": "^7.6.1",
+    "sync-request": "^6.0.0"
+  }
+}
