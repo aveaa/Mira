@@ -46,6 +46,6 @@ module.exports = {
             	msg += `<@!${top[i]}> ${tools.separateThousandth(list(top[i]).currency)}:cookie:\n`;
         };
         
-        message.reply(`**печеньковые богачи:**\n${msg});
+        message.reply(`**печеньковые богачи:**\n${msg}`);
     },
 };
