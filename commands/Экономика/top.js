@@ -3,17 +3,17 @@ var tools = require('../../modules/tools.js');
 
 module.exports = {
     name: __filename.slice(__dirname.length + 1).split('.')[0],
-    description: 'Печеньковые богачи',
+    description: 'Топ печеньковых богачей',
     aliases: ['ct'],
     usage: undefined,
     guild: true,
     hide: false,
-    cooldown: 180,
+    cooldown: 18,
     cooldownMessage: undefined,
     permissions: undefined,
     group: __dirname.split(/[\\/]/)[__dirname.split(/[\\/]/).length - 1],
     execute(message, args, CooldownReset) {
-        var list = cache.getCurrency(message.guild.id, undefined);
+        var list = cache.getCurrency(message.guild.id);
 
         if (!list) {
             return message.reply(`в этом мире нет печенья... но я здесь и вместе мы сможем исправить это!`);
