@@ -7,7 +7,7 @@ module.exports = {
     aliases: ['ct'],
     usage: undefined,
     guild: true,
-    hide: false,
+    hide: true,
     cooldown: 18,
     cooldownMessage: undefined,
     permissions: undefined,
