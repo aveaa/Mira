@@ -65,15 +65,14 @@ module.exports.getCurrency = (idServer, idUser) => {
 	idServer = (idServer).toString();
 	checkCache(idServer);
 	
-	if (!!idServer && !idUser) {
+	if (idUser == undefinef) {
 		  return cache.servers[idServer].economy;
 	} else {
-    idUser = (idUser).toString();
-
-    if (idUser in cache.servers[idServer].economy) {
-        return parseInt(cache.servers[idServer].economy[idUser]);
-    };
-
+                  idUser = (idUser).toString();
+                  if (idUser in cache.servers[idServer].economy) {
+                              return parseInt(cache.servers[idServer].economy[idUser]);
+                  };
+        };
     return 0;
 };
 
