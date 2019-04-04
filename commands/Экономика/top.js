@@ -13,7 +13,7 @@ module.exports = {
     permissions: undefined,
     group: __dirname.split(/[\\/]/)[__dirname.split(/[\\/]/).length - 1],
     execute(message, args, CooldownReset) {
-        var list = bot.getCurrency(message.guild.id, undefined);
+        var list = cache.getCurrency(message.guild.id, undefined);
 
         if (!list) {
             return message.reply(`в этом мире нет печенья... но я здесь и вместе мы сможем исправить это!`);
