@@ -61,11 +61,11 @@ module.exports.setCurrency = (idServer, idUser, currency) => {
     cache.servers[idServer].economy[idUser] = currency;
 };
 
-module.exports.getCurrency = (idServer, idUser) => {
+module.exports.getCurrency = (idServer, idUser = null) => {
 	idServer = (idServer).toString();
 	checkCache(idServer);
 	
-	if (idUser == undefinef) {
+	if (idUser == null) {
 		  return cache.servers[idServer].economy;
 	} else {
                   idUser = (idUser).toString();
