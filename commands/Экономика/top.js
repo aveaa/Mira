@@ -32,7 +32,7 @@ module.exports = {
         var temp = 0;
         var top = [];
         for (var i = 0; i < topSize; i++) {
-             for (e in listWithotTop {
+             for (e in listWithotTop) {
  	               if (listWithotTop[e].currency > temp) {
  	    	              temp = e;
  	               };
