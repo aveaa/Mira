@@ -43,7 +43,7 @@ module.exports = {
        
         var msg = '';
         for (var i = 0; i < topSize; i++) {
-            	msg += `<@!${top[i]}> ${tools.separateThousandth(list(top[i]).currency)}:cookie:\n`;
+            	msg += `<@!${top[i]}> ${tools.separateThousandth(list[top[i]].currency)}:cookie:\n`;
         };
         
         message.reply(`**печеньковые богачи:**\n${msg}`);
