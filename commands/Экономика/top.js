@@ -42,8 +42,11 @@ module.exports = {
         };
        
         var msg = '\n';
-        for (var i = 0; i < topSize; i++) {
-            	msg = msg + '<@!' + top[i] + '> ' + tools.separateThousandth(list[top[i]].currency) + ':cookie:\n';
+        for (var i = 0; i < topSize - 1; i++) {
+            
+            console.log(top[i] + ' and coo: ' + list[top[i]]);
+            	
+            msg = msg + '<@!' + top[i] + '> ' + tools.separateThousandth(list[top[i]].currency) + ':cookie:\n';
         };
         
         message.reply(`**печеньковые богачи:** ${msg}`);
